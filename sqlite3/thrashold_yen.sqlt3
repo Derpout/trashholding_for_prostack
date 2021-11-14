@@ -1,0 +1,13 @@
+INSERT OR REPLACE INTO Packages (Name, Version)  VALUES ('PCKUPD','1.0.0');
+INSERT OR REPLACE INTO Operators (name, implementor, executable, type, inputs, outputs, uidescription, message, metaname, metaweight, Segmentation, Detect_edges, Edges) VALUES ('thrashold_yen3d','IM','thrashold_yen3d', 1, "tif", "tif", '1;
+nbins;int;256;
+
+--nbins $1;', 'Threshold value based on Yen's method.
+
+INPUT
+1 image:.tif
+OUTPUT
+1 image:.tif
+PARAMETERS
+Return upper threshold value. All pixels with an intensity higher than
+this value are assumed to be foreground.', 'thrashold_yen3d', 2, 1, 1, 1);
