@@ -1,0 +1,13 @@
+INSERT OR REPLACE INTO Packages (Name, Version)  VALUES ('PCKUPD','1.0.0');
+INSERT OR REPLACE INTO Operators (name, implementor, executable, type, inputs, outputs, uidescription, message, metaname, metaweight, Segmentation, Detect_edges, Edges) VALUES ('thrashold_triangle3d','IM','thrashold_triangle3d', 1, "tif", "tif", '1;
+nbins;int;256;
+
+--nbins $1;', 'Threshold value based on the triangle algorithm.
+
+INPUT
+1 image:.tif
+OUTPUT
+1 image:.tif
+PARAMETERS
+nbins : int, optional
+ Number of bins used to calculate histogram.', 'thrashold_triangle3d', 2, 1, 1, 1);
